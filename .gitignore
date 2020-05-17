@@ -1,0 +1,2 @@
+# Ignora arquivos e sub-pastas localizados na pasta ".vscode/"
+.vscode/
