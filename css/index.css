@@ -1,0 +1,33 @@
+/* Exit popup  */
+
+#popup {
+    display: none;
+    background: rgba(0, 0, 0, .75);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 10;
+}
+
+.popup_box {
+    background: rgb(255, 255, 255);
+    max-width: 500px;
+    margin: 50px;
+    padding: 30px;
+    border-radius: 20px;
+    position: relative;
+}
+
+#popup h1 {
+    color: rgb(115, 26, 183);
+    font-size: 2rem;
+}
+
+#close-popup img {
+    width: 50px;
+    position: absolute;
+    right: -15px;
+    top: -15px;
+}
