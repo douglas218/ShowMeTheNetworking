@@ -1,21 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 
   <!-- LINKS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link rel="stylesheet" href="./css/index.css">
   <link rel="stylesheet" href="./css/countdown.css">
 
-  <!-- SCRIPT JS -->
-  <script src="./js/index.js"></script>
 </head>
 <body>
-      
-  <!-- Countdown -->
-  <div class="div-countdown">
+
+  <div class="container">
+
+        <!-- Countdown -->
+    <div class="div-countdown">
       <ul id="countdown" class="countdown">
           <li><span id="days"    class="countdown_time">00</span><span class="countdown_label">dias</span></li>
           <li><span id="hours"   class="countdown_time">00</span><span class="countdown_label">horas</span></li>
@@ -24,7 +25,24 @@
       </ul>
     </div>
 
+  <!-- Exit popup -->
+    <div class="row justify-content-center align-items-center" id="popup">
 
+      <div class="popup_box"> 
+        <div id="close-popup">
+          <img src="./img/exit-x.svg" alt="botão para sair da tela">
+        </div>
+        <h1>Ei! Vai embora sem se inscrever?</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus aspernatur expedita iure tempore. </p>
+      </div>
+
+    </div>
+
+  </div> <!-- fim do container -->
+      
+
+    <!-- SCRIPT JS -->
+    <script src="./js/index.js"></script>
 
     <!-- Countdown - deixar no final do body -->
     <script src="./js/countdown.js"></script>
