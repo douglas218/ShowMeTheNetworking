@@ -9,11 +9,15 @@
     bottom: 0;
     right: 0;
     z-index: 10;
+    justify-content:center;
+    /* align-items:center; */
 }
 
 .popup_box {
     background: rgb(255, 255, 255);
     max-width: 500px;
+    max-height: 500px;
+    min-height: 300px;
     margin: 50px;
     padding: 30px;
     border-radius: 20px;
@@ -30,4 +34,5 @@
     position: absolute;
     right: -15px;
     top: -15px;
+    cursor: pointer;
 }
