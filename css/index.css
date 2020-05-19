@@ -1,3 +1,94 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Jost', sans-serif;
+}
+
+section {
+    min-height: 100vh;
+    display: flex;
+}
+
+.container {
+    max-width: 80%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.left {
+    background-color: rgb(99, 220, 62);
+    width: 40%;
+}
+
+.right {
+    background-color: rgb(115, 26, 183);
+    width: 60%;
+    display: flex;
+    justify-content: center;
+}
+
+/* Coluna esquerda - informações  */
+
+#intro .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.social-media {
+    text-align: center;
+    padding: 20px;
+}
+
+.social-media img {
+    vertical-align: middle;
+    width: 30px;
+    margin-right: 10px;
+}
+
+.social-media a {
+    text-decoration: none;
+    margin-left: 10px;
+    font-size: 1.2rem;
+}
+
+/* Coluna direita - informações  */
+
+
+#banner-data {
+    background-color: white;
+    padding: 20px;
+    color: black;
+    text-transform: uppercase;
+    width: fit-content;
+}
+
+#banner-data h2 {
+    margin: 0;
+}
+
+#intro h1 {
+    font-family: 'Alfa Slab One', cursive;
+    text-transform: uppercase;
+    font-size: 3rem;
+    letter-spacing: 0.4rem;
+    color: white;
+}
+
+ul {
+    padding-inline-start: 17px;
+}
+
+.themes li {
+    color: rgb(99, 220, 62);
+    font-size: 1.3rem;
+}
+
+
 /* Exit popup  */
 
 #popup {
@@ -35,4 +126,20 @@
     right: -15px;
     top: -15px;
     cursor: pointer;
+}
+
+
+/* dispositivos menores */
+
+
+@media (max-width:768px) {
+
+    #intro {
+        flex-direction: column-reverse;
+    }
+
+    #intro .right,.left {
+        width: 100%;
+    }
+    
 }
