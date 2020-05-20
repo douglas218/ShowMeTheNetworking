@@ -1,5 +1,5 @@
 
-var endDate = new Date(2020, 05, 20); // stringToDate('2008-09-19 17:35:00');
+var endDate = new Date(2020, 05, 20, 18, 30); // stringToDate('2008-09-19 17:35:00');
 
 countdownRefresh();
 
