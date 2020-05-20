@@ -27,8 +27,11 @@ header {
 .container {
     width: 80%;
     margin: 0 auto;
-    padding-top: 60px;
     padding-bottom: 60px;
+}
+
+.right .container {
+    padding-top: 60px;
 }
 
 h3 {
@@ -51,7 +54,9 @@ h3 {
 }
 
 .social-media {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
 }
 
 .social-media img {
@@ -66,6 +71,20 @@ h3 {
     font-size: 1.2rem;
 }
 
+button {
+    margin-top: 20px;
+    width: 100%;
+    border-radius: 10px;
+    background-color: white;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+button a {
+    text-decoration: none;
+    font-family: 'Jost', sans-serif;
+    font-size: 1.2rem;
+}
 /* Coluna direita - informações  */
 
 
@@ -108,13 +127,9 @@ ul {
     color: white;
 }
 
-.convidado {
-    max-width: 50%;
-}
- 
-
 .convidados img {
     width: 200px;
+    height: 200px;
     border-radius: 50%;
     border: 5px solid rgb(99, 220, 62);
 }
@@ -163,7 +178,7 @@ ul {
 .popup_box {
     background: rgb(255, 255, 255);
     max-width: 500px;
-    max-height: 500px;
+    height: fit-content;    
     min-height: 300px;
     margin: 50px;
     padding: 30px;
@@ -174,6 +189,10 @@ ul {
 #popup h1 {
     color: rgb(115, 26, 183);
     font-size: 2rem;
+}
+
+#popup button {
+    background-color: rgb(99, 220, 62);
 }
 
 #close-popup img {
@@ -196,6 +215,19 @@ ul {
 
     #intro .right,.left {
         width: 100%;
+    }
+
+    .convidados {
+        display: block;
+    }
+
+    .convidados figure {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .convidados img {
+        align-self: center;
     }
     
 }
