@@ -1,3 +1,160 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Jost', sans-serif;
+    background-color: rgb(115, 26, 183);
+}
+
+section {
+    min-height: 100vh;
+    display: flex;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgb(115, 26, 183);
+}
+
+#menu ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 0 0;
+}
+
+#menu ul li {
+    padding: 20px 30px;
+}
+
+#menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.3rem;
+}
+
+/* Colunas  */
+
+.container {
+    max-width: 80%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.left,.right {
+    width: 50%;
+    padding-top: 50px;
+}
+
+/* Coluna esquerda - informações  */
+
+#intro .left {
+    background-color: rgb(99, 220, 62);
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.social-media {
+    text-align: center;
+}
+
+.social-media img {
+    vertical-align: middle;
+    width: 30px;
+    margin-right: 10px;
+}
+
+.social-media a {
+    text-decoration: none;
+    margin-left: 10px;
+    font-size: 1.2rem;
+}
+
+/* Coluna direita - informações  */
+
+#intro .right {
+    background-color: rgb(115, 26, 183);
+    width: 60%;
+    display: flex;
+    justify-content: center;
+}
+
+#banner-data {
+    background-color: white;
+    padding: 20px;
+    color: black;
+    text-transform: uppercase;
+    width: fit-content;
+}
+
+#banner-data h2 {
+    margin: 0;
+}
+
+#intro h1 {
+    font-family: 'Alfa Slab One', cursive;
+    text-transform: uppercase;
+    font-size: 3rem;
+    letter-spacing: 0.4rem;
+    color: white;
+}
+
+ul {
+    padding-inline-start: 17px;
+}
+
+.themes li {
+    color: rgb(99, 220, 62);
+    font-size: 1.3rem;
+}
+
+/* Convidados */
+
+#convidados {
+    background-color: rgba(115, 26, 183, 0.14);
+    padding-top: 100px;
+    color: white;
+}
+
+#convidados .left {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+#convidados .right {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+#convidados img {
+    width: 100%;
+    border-radius: 50%;
+    border: 5px solid rgb(99, 220, 62);
+}
+
+#convidados figure {
+    width: 40%;
+}
+
+#convidados figcaption {
+    text-align: center;
+}
+
+#convidados .two-col {
+    display: flex;
+}
+
+
 /* Exit popup  */
 
 #popup {
@@ -35,4 +192,20 @@
     right: -15px;
     top: -15px;
     cursor: pointer;
+}
+
+
+/* dispositivos menores */
+
+
+@media (max-width:768px) {
+
+    #intro {
+        flex-direction: column-reverse;
+    }
+
+    #intro .right,.left {
+        width: 100%;
+    }
+    
 }

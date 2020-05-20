@@ -3,27 +3,98 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <meta name="description" content="Dicas de psicólogos lidar com o sofrimento mental causado pelo isolamento, principalmente para quem não vive em um lar acolhedor">
+
+  <title>Paz em Casa - saúde mental na quarentena</title>
 
   <!-- LINKS -->
   <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
+  <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Jost&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/index.css">
   <link rel="stylesheet" href="./css/countdown.css">
 
 </head>
 <body>
 
-  <div class="container">
+  
+    <header>
+      <nav id="menu">
+        <ul>
+          <li><a href="#intro">Início</a></li>
+          <li><a href="#convidados">Convidados</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+        </ul>
+      </nav>   
+    </header>
 
-    <!-- Countdown -->
-    <div class="div-countdown">
-      <ul id="countdown" class="countdown">
-        <li><span id="days"    class="countdown_time">00</span><span class="countdown_label">dias</span></li>
-        <li><span id="hours"   class="countdown_time">00</span><span class="countdown_label">horas</span></li>
-        <li><span id="minutes" class="countdown_time">00</span><span class="countdown_label">minutos</span></li>
-        <li><span id="seconds" class="countdown_time">00</span><span class="countdown_label">segundos</span></li>
-      </ul>
-    </div>
+    <section id="intro">
+
+      <div class="left">
+        <div class="logo">
+          <img src="./img/logo_pazemcasa.png" alt="logo Paz em Casa">
+        </div>
+        <div class="social-media"> 
+          <a href="https://www.facebook.com/Paz-em-Casa-103464688048669/" target="_blank" rel="noopener"><img src="./img/facebook.svg" alt="">/PazemCasa</a>
+        </div>
+      </div>
+
+      <div class="right">
+        
+        <div class="container">
+
+          <div id="banner-data">
+            <h2>20/05 - Quarta-feira, às 18:30</h2>
+          </div>
+
+          <h1>Live</h1>
+
+          <ul class="themes">
+            <li>Preconceito LGBT+</li>
+            <li>Insônia e ansiedade</li>
+            <li>Violência doméstica</li>
+            <li>Uso de medicamentos</li>
+            <li>Autoestima</li>
+          </ul>
+      
+          <!-- Countdown -->
+          <div class="div-countdown">
+            
+            <ul id="countdown" class="countdown">
+              <li><span id="days"    class="countdown_time">00</span><span class="countdown_label">dias</span></li>
+              <li><span id="hours"   class="countdown_time">00</span><span class="countdown_label">horas</span></li>
+              <li><span id="minutes" class="countdown_time">00</span><span class="countdown_label">minutos</span></li>
+              <li><span id="seconds" class="countdown_time">00</span><span class="countdown_label">segundos</span></li>
+            </ul>
+          </div>
+      </div>
+      </div>
+
+    </section>
+
+    <section id="convidados">
+
+      <div class="two-col">
+        <div class="left">
+            <figure>
+              <img src="img/convidada_caroline.webp" alt="">
+              <figcaption><h2>Caroline Machado</h2></figcaption>
+              <p>Psicóloga pela Universidade Federal de Goiás e licenciada em psicologia da educação. Pós-graduanda pela Universidade do Porto</p>
+            </figure>
+
+          </div>
+          <div class="right">
+            <figure>
+              <img src="img/convidado_alan.webp" alt="">
+              <figcaption><h2>Alan Di Assis</h2></figcaption>
+              <p>Jornalista, militante, pesquisador e produtor de conteúdo das relações entre homoafetividade e protestantismo/evangelho</p>
+            </figure>
+        </div>
+      </div>
+
+
+    </section>
+
+
 
     <!-- Exit popup -->
     <div class="" id="popup">
@@ -37,9 +108,7 @@
       </div>
 
     </div>
-
-  </div> <!-- fim do container -->
-      
+   
 
   <!-- SCRIPT JS -->
   <script src="./js/index.js"></script>
