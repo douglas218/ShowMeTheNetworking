@@ -1,5 +1,5 @@
 
-var endDate = new Date(2020, 4, 21, 18, 30); // stringToDate('2008-09-19 17:35:00');
+var endDate = new Date(2020, 4, 21, 18, 30); /* O mês começa em 0, vai de 0 a 11 */
 
 countdownRefresh();
 
