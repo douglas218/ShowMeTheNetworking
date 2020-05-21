@@ -87,14 +87,15 @@ button a {
     text-decoration: none;
     font-family: 'Open Sans', sans-serif;
     font-size: 1.3rem;
-    letter-spacing: 0.1rem;
+    letter-spacing: 0.05rem;
+    text-transform: uppercase;
 }
 
 #btnLiveEsquerdo {
     background-color: white;
     box-shadow: 4px 6px 0 0 #751682;
     text-transform: uppercase;
-    width: 80%;
+    width: 90%;
 }
 
 #btnLiveDireito {
