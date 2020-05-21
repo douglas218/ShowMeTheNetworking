@@ -28,6 +28,7 @@ header {
     width: 80%;
     margin: 0 auto;
     padding-bottom: 60px;
+    text-align: center;
 }
 
 .right .container {
@@ -36,21 +37,25 @@ header {
 
 h3 {
     color: rgb(99, 220, 62);
-    font-weight: 300;
+    font-weight: 400;
+    text-align: justify;
+    text-align-last: center;
+    font-size: 1.2rem;
 }
  
 /* Coluna esquerda - informações  */
 
 .left {
     background-color: rgb(99, 220, 62);
-    width: 20%;
+    width: 40%;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
 }
 
 .logo img {
     width: 100%;
+    top: 0;
 }
 
 .social-media {
@@ -61,7 +66,7 @@ h3 {
 
 .social-media img {
     vertical-align: middle;
-    width: 30px;
+    width: 35px;
     margin-right: 10px;
 }
 
@@ -73,39 +78,75 @@ h3 {
 
 button {
     margin-top: 20px;
-    width: 100%;
     border-radius: 10px;
-    background-color: white;
     padding: 10px;
-    text-transform: uppercase;
+    border: 0px;    
 }
 
 button a {
     text-decoration: none;
-    font-family: 'Jost', sans-serif;
-    font-size: 1.2rem;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.3rem;
+    letter-spacing: 0.05rem;
+    text-transform: uppercase;
 }
-/* Coluna direita - informações  */
 
-
-#banner-data {
+#btnLiveEsquerdo {
     background-color: white;
+    box-shadow: 4px 6px 0 0 #751682;
+    text-transform: uppercase;
+    width: 90%;
+}
+
+#btnLiveDireito {
+    background-color: rgb(99, 220, 62);
+    width: 40%;
+}
+
+#botoesDireito {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#btnLiveEsquerdo a {
+    color: rgb(115, 26, 183);
+}
+
+#btnLiveDireito a {
+    color: white
+}
+
+#btnPergunta {
+    border: 2px solid rgb(99, 220, 62);
+    background-color: rgb(115, 26, 183);
+    width: 40%;
+}
+
+#btnPergunta a {
+    color: rgb(99, 220, 62);
+}
+
+/* Coluna direita - informações  */
+#banner-data {
+    background-color: rgb(115, 26, 183);
     padding: 20px;
     color: black;
-    text-transform: uppercase;
     text-align: center;
+}
+
+#intro h1 {
+    color: white;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    margin: 0;
 }
 
 #banner-data h2 {
     margin: 0;
-}
-
-#intro h1 {
-    text-transform: uppercase;
-    font-size: 1.8rem;
-    font-weight: 600;
-    letter-spacing: 0.4rem;
-    margin: 0;
+    color: white;
+    font-weight: 400;
 }
 
 ul {
@@ -120,11 +161,12 @@ ul {
  
 
 .convidados {
-    margin-top: 40px;
+    margin-top: 60px;
     display: flex;
     text-align: center;
     justify-content: space-evenly;
     color: white;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .convidados img {
@@ -132,6 +174,7 @@ ul {
     height: 200px;
     border-radius: 50%;
     border: 5px solid rgb(99, 220, 62);
+    margin-right: 10px;
 }
 
 .convidados figure {
@@ -141,7 +184,16 @@ ul {
 
 .convidados figcaption {
     text-align: center;
+}
 
+.convidados h2 {
+    text-align: left;
+}
+
+.convidados p {
+    text-align: left;
+    margin-left: 5px;
+    max-width: 180px;
 }
 
 .convidados .two-col {
@@ -149,9 +201,11 @@ ul {
 }
 
 .perguntas {
-    margin-top: 50px;
+    text-align: center;
+    margin-top: 60px;
     color: white;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .perguntas a {
@@ -160,8 +214,35 @@ ul {
     font-weight: 600;
 }
 
-/* Exit popup  */
 
+#agenda {
+   /* border: 2px solid rgb(115, 26, 183); */
+    border-radius: 30px;
+    text-align: center;
+    margin: 10px;
+    margin-top: 50px;
+    padding-bottom: 10px;
+    color: white;
+    font-size: 1.0rem;
+    font-family: 'Open Sans', sans-serif;
+    
+}
+
+#agenda  p {
+    color: rgb(115, 26, 183);
+    font-weight: 400;
+    font-size: 1.0rem;
+    margin: 10px;
+}
+
+#agenda  a {
+    text-decoration: underline;
+    color: rgb(115, 26, 183);
+    font-weight: 400;
+    margin: 10px;
+}
+
+/* Exit popup  */
 #popup {
     display: none;
     background: rgba(0, 0, 0, .75);
@@ -177,11 +258,11 @@ ul {
 
 .popup_box {
     background: rgb(255, 255, 255);
-    max-width: 500px;
+    max-width: 800px;
     height: fit-content;    
     min-height: 300px;
     margin: 50px;
-    padding: 30px;
+    /* padding: 30px; */
     border-radius: 20px;
     position: relative;
 }
@@ -193,6 +274,15 @@ ul {
 
 #popup button {
     background-color: rgb(99, 220, 62);
+    text-transform: uppercase;
+    box-shadow: 4px 6px 0 0 #751682;
+    text-transform: uppercase;
+    width: 80%;
+    font-weight: 600;
+}
+
+#popup button a {
+    color: #751682;
 }
 
 #close-popup img {
@@ -203,9 +293,51 @@ ul {
     cursor: pointer;
 }
 
+#exit-btn-group {
+    text-align: center;
+    padding: 0 0 40px 0;
+}
+
+#share-area {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+#popup-arte {
+    background: url('../img/arte_6_4.webp') no-repeat;
+    background-size: contain;
+    display: block;
+    width: 600px;
+    height: 560px;
+}
 
 /* dispositivos menores */
+@media (max-width:988px) {
+    .convidados {
+        display: block;
+    }
 
+    .convidado {
+        margin-bottom: 20px;
+    }
+
+    .botoesDireito {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    #btnPergunta, #btnLiveDireito {
+        width: 45%;
+    }
+
+    #countdown {
+        display: block;
+    }
+
+}
 
 @media (max-width:768px) {
 
@@ -217,17 +349,47 @@ ul {
         width: 100%;
     }
 
+    #intro h1 {
+        font-size: 1.6rem;
+    }
+
+    #banner-data {
+        padding: 10px 10px 20px 10px;
+    }
+
     .convidados {
         display: block;
     }
 
     .convidados figure {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
     }
 
     .convidados img {
         align-self: center;
+        width: 150px;
+        height: 150px;
     }
-    
+
+    .container {
+        padding-bottom: 0px;
+        width: 90%;
+    }
+
+    #btnLiveEsquerdo {
+        width: 100%;
+    }
+
+    #countdown {
+        width: 100%;
+    }
+
+    #botoesDireito {
+        flex-direction: column-reverse;
+    }
+
+    #btnPergunta, #btnLiveDireito {
+        width: 100%;
+    }
 }

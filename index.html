@@ -9,13 +9,24 @@
 
   <!-- LINKS -->
   <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Jost&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./css/index.css">
   <link rel="stylesheet" href="./css/countdown.css">
+  <link rel="stylesheet" href="./css/index.css">
+  
+   <!-- Facebook -->
+    <meta property="og:url"           content="https://pazemcasa.online" />
+    <meta property="og:type"          content="website" />
+    <meta property="og:title"         content="Live Gratuita: Paz em Casa - saúde mental na quarentena" />
+    <meta property="og:description"   content="Psicóloga e LGBT juntos vão falar sobre os desafios do isolamento e do preconceito em casa - vem bater esse papo com a gente, também queremos te ouvir!" />
+    <meta property="og:image"         content="https://pazemcasa.online/img/arte_1.webp" />
 
 </head>
 <body>
-
+  <!-- Load Facebook SDK for JavaScript -->
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v7.0&appId=1039006279791335&autoLogAppEvents=1"></script>
+    
     <section id="intro">
 
       <div class="left">
@@ -26,7 +37,7 @@
 
         <div class="container">
 
-          <button><a href="http://eepurl.com/g4dxCP" target="_blank" rel="noopener">Quero assistir à live!</a></button>
+          <button id="btnLiveEsquerdo"><a href="http://eepurl.com/g4dxCP" target="_blank" rel="noopener">Receber lembrete por email</a></button>
             
 
 
@@ -47,7 +58,18 @@
                 <li><span id="seconds" class="countdown_time">00</span><span class="countdown_label">segundos</span></li>
               </ul>
               
+              <div id="countdown-ended">
+                <p>Evento acontecendo agora!</p>
+                <a href="#">Clique aqui para acessar!</a>
+              </div>
             </div>
+
+            <!-- 
+            <div id="agenda">
+              <p>Adicionar lembrete no Google:</p>
+              <a target="_blank" href="https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=MnNtZThyODdrdWVncXBjdTIzYW9rNGZ1MTQgZG91Z2xhczIxOEBt&amp;tmsrc=douglas218%40gmail.com"><img border="0" src="./img/calendar.png"></a>
+            </div> 
+            -->
 
         </div> <!-- fim do container -->
       </div>  <!-- fim do lado esquerdo -->
@@ -59,30 +81,31 @@
         <div class="container">
 
           <div id="banner-data">
-            <h1>LIVE: SAÚDE MENTAL NA PANDEMIA<br>21/05 - Quinta-feira, às 18:30</h2>
+            <h1>LIVE: SAÚDE MENTAL NA PANDEMIA</h1>
+            <h2>21/05 - Quinta-feira, às 18:30</h2>
           </div>
 
-          <h3>Essa live é pra salvar sua life: a gente sabe que os <strong>LGBTQ+</strong> estão sofrendo muito nessa quarentena. Ficar em casa tem sido difícil - falta <strong>apoio e segurança</strong> e sobra preconceito. Mas a gente juntou quem entende do assunto - tanto na teoria quanto na vida real. Psicólogo e LGBT juntos vão falar sobre os <strong>desafios do isolamento</strong> e do preconceito em casa - vem bater esse papo com a gente, também queremos te ouvir!
+          <h3>Essa live é pra salvar sua life: a gente sabe que a comunidade <strong>LGBTQ+</strong> está sofrendo muito nessa quarentena. Ficar em casa tem sido difícil - falta <strong>apoio e segurança</strong> e sobra preconceito. Mas a gente juntou quem entende do assunto - tanto na teoria quanto na vida real. Psicóloga e LGBT juntos vão falar sobre os <strong>desafios do isolamento</strong> e do preconceito em casa - vem bater esse papo com a gente, também queremos te ouvir!
           </h3>
 
           <div class="convidados">
 
             <div class="convidado">
               <figure>
-                <img src="img/convidada_caroline.webp" alt="">
+                <img src="img/convidada_caroline_p.webp" alt="">
                 <figcaption>
                   <h2>Caroline Machado</h2>
-                  <p>Psicóloga pela UFG e<br> e pós-graduanda pela<br> Universidade do Porto</p>
+                  <p class="">Psicóloga pela UFG e pós-graduanda pela Universidade do Porto</p>
                 </figcaption>
               </figure>
             </div>
 
             <div class="convidado">
               <figure>
-                <img src="img/convidado_alan.webp" alt="">
+                <img src="img/convidado_alan_p.webp" alt="">
                 <figcaption>
                   <h2>Alan Di Assis</h2>
-                  <p>Jornalista<br>e pesquisador</p>
+                  <p>Jornalista e pesquisador</p>
                 </figcaption>
               </figure>
             </div>
@@ -90,13 +113,20 @@
           </div>
 
           <div class="perguntas">
-            <a href="https://oneask.app/e/pazemcasa/5ec4ab9f2a5c682899620dd0" target="_blank" rel="noopener">Mande uma pergunta</a> para os nossos convidados ou vote naquela que você também quer saber!
+            <a href="https://oneask.app/e/pazemcasa" target="_blank" rel="noopener">Mande uma pergunta</a> para os nossos convidados ou vote naquela que você também quer saber!
+          </div>
+          
+          <div id="botoesDireito">
+            <button id="btnPergunta"><a href="https://oneask.app/e/pazemcasa" target="_blank" rel="noopener">Enviar pergunta</a></button>
+            <button id="btnLiveDireito"><a href="https://event.webinarjam.com/channel/PazEmCasa" target="_blank" rel="noopener">Quero assistir à live!</a></button>
           </div>
 
-
+          <div id="share-area">
+            <!-- Facebook -->
+            <div class="fb-share-button" data-href="http://pazemcasa.online/" data-layout="button" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fpazemcasa.online%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Compartilhar</a></div>
+          </div>
         </div>
       </div>
-
     </section>
 
 
@@ -108,8 +138,15 @@
         <div id="close-popup">
           <img src="./img/exit-x.svg" alt="botão para sair da tela">
         </div>
-        <h1>Já vai embora? Não esqueça de se inscrever para assistir à live!</h1>
-        <button><a href="http://eepurl.com/g4dxCP" target="_blank" rel="noopener">Quero receber o link por email</a></button>
+
+        <!-- <h1>Já vai embora?</h1>
+        <h1> Não esqueça de se inscrever para assistir à live!</h1> -->
+          
+        <div id="popup-arte"></div>
+        
+        <div id="exit-btn-group">
+          <button><a href="http://eepurl.com/g4dxCP" target="_blank" rel="noopener">Quero receber o link por email</a></button>
+        </div>    
       </div>
 
     </div>
