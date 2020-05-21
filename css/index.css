@@ -335,16 +335,25 @@ ul {
     #countdown {
         display: block;
     }
+
 }
 
 @media (max-width:768px) {
 
     #intro {
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 
     #intro .right,.left {
         width: 100%;
+    }
+
+    #intro h1 {
+        font-size: 1.6rem;
+    }
+
+    #banner-data {
+        padding: 10px 10px 20px 10px;
     }
 
     .convidados {
@@ -358,13 +367,28 @@ ul {
 
     .convidados img {
         align-self: center;
+        width: 150px;
+        height: 150px;
     }
 
     .container {
         padding-bottom: 0px;
+        width: 90%;
     }
-    
-    .right {
-        padding-bottom: 80px;
+
+    #btnLiveEsquerdo {
+        width: 100%;
+    }
+
+    #countdown {
+        width: 100%;
+    }
+
+    #botoesDireito {
+        flex-direction: column;
+    }
+
+    #btnPergunta, #btnLiveDireito {
+        width: 100%;
     }
 }
