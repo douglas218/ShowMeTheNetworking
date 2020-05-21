@@ -385,7 +385,7 @@ ul {
     }
 
     #botoesDireito {
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 
     #btnPergunta, #btnLiveDireito {
