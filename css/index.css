@@ -280,6 +280,10 @@ ul {
     font-weight: 600;
 }
 
+#popup button a {
+    color: rgb(115, 26, 183);
+}
+
 #close-popup img {
     width: 50px;
     position: absolute;
