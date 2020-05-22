@@ -37,9 +37,7 @@
 
         <div class="container">
 
-          <!-- <button id="btnLiveEsquerdo"><a href="http://eepurl.com/g4dxCP" target="_blank" rel="noopener">Receber lembrete por email</a></button> -->
-
-          
+          <button id="btnLiveEsquerdo"><a href="http://eepurl.com/g4dxCP" target="_blank" rel="noopener">Receber lembrete por email</a></button>
             
             <div class="social-media"> 
               <a href="https://www.facebook.com/Paz-em-Casa-103464688048669/" target="_blank" rel="noopener"><img src="./img/facebook.svg" alt=""></a>
@@ -48,12 +46,8 @@
               <a href="https://twitter.com/pazemcasa1" target="_blank" rel="noopener"><img src="./img/twitter.svg" alt=""></a>
             </div>
 
-                        
-            <h3 class="video-descricao">Essa live é pra salvar sua life: assista nosso papo sobre os <strong>desafios do isolamento</strong> e do preconceito em casa para a comunidade <strong>LGBTQ+</strong>. 
-            </h3>  
-
             <!-- Countdown -->
-            <!-- <div class="div-countdown">
+            <div class="div-countdown">
               
               <ul id="countdown" class="countdown">
                 <li><span id="days"    class="countdown_time">00</span><span class="countdown_label">dias</span></li>
@@ -66,7 +60,7 @@
                 <p>Evento acontecendo agora!</p>
                 <a href="#">Clique aqui para acessar!</a>
               </div>
-            </div> -->
+            </div>
 
             <!-- 
             <div id="agenda">
@@ -86,14 +80,11 @@
 
           <div id="banner-data">
             <h1>LIVE: SAÚDE MENTAL NA PANDEMIA</h1>
-            <!-- <h2>21/05 - Quinta-feira, às 18:30</h2> -->
+            <h2>21/05 - Quinta-feira, às 18:30</h2>
           </div>
 
-          <div class="video">
-
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/9ISo2YcO3Rg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            
-          </div>
+          <h3>Essa live é pra salvar sua life: a gente sabe que a comunidade <strong>LGBTQ+</strong> está sofrendo muito nessa quarentena. Ficar em casa tem sido difícil - falta <strong>apoio e segurança</strong> e sobra preconceito. Mas a gente juntou quem entende do assunto - tanto na teoria quanto na vida real. Psicóloga e LGBT juntos vão falar sobre os <strong>desafios do isolamento</strong> e do preconceito em casa - vem bater esse papo com a gente, também queremos te ouvir!
+          </h3>
 
           <div class="convidados">
 
@@ -119,19 +110,19 @@
 
           </div>
 
-          <!-- <div class="perguntas">
+          <div class="perguntas">
             <a href="https://oneask.app/e/pazemcasa" target="_blank" rel="noopener">Mande uma pergunta</a> para os nossos convidados ou vote naquela que você também quer saber!
-          </div> -->
-<!--           
+          </div>
+          
           <div id="botoesDireito">
             <button id="btnPergunta"><a href="https://oneask.app/e/pazemcasa" target="_blank" rel="noopener">Enviar pergunta</a></button>
             <button id="btnLiveDireito"><a href="https://event.webinarjam.com/channel/PazEmCasa" target="_blank" rel="noopener">Quero assistir à live!</a></button>
-          </div> -->
+          </div>
 
-          <!-- <div id="share-area"> -->
+          <div id="share-area">
             <!-- Facebook -->
-            <!-- <div class="fb-share-button" data-href="http://pazemcasa.online/" data-layout="button" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fpazemcasa.online%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Compartilhar</a></div>
-          </div> -->
+            <div class="fb-share-button" data-href="http://pazemcasa.online/" data-layout="button" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fpazemcasa.online%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Compartilhar</a></div>
+          </div>
         </div>
       </div>
     </section>
@@ -139,31 +130,31 @@
 
 
     <!-- Exit popup -->
-    <!-- <div class="" id="popup">
+    <div class="" id="popup">
 
       <div class="popup_box"> 
         <div id="close-popup">
           <img src="./img/exit-x.svg" alt="botão para sair da tela">
-        </div> -->
+        </div>
 
         <!-- <h1>Já vai embora?</h1>
         <h1> Não esqueça de se inscrever para assistir à live!</h1> -->
           
-        <!-- <div id="popup-arte"></div>
+        <div id="popup-arte"></div>
         
         <div id="exit-btn-group">
           <button><a href="http://eepurl.com/g4dxCP" target="_blank" rel="noopener">Quero receber o link por email</a></button>
         </div>    
       </div>
 
-    </div> -->
+    </div>
    
 
   <!-- SCRIPT JS -->
-  <!-- <script src="./js/index.js"></script> -->
+  <script src="./js/index.js"></script>
 
   <!-- Countdown - deixar no final do body -->
-  <!-- <script src="./js/countdown.js"></script> -->
+  <script src="./js/countdown.js"></script>
 
 
 </body>

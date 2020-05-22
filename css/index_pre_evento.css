@@ -27,19 +27,19 @@ header {
 .container {
     width: 80%;
     margin: 0 auto;
-    padding-bottom: 25px;
+    padding-bottom: 60px;
     text-align: center;
 }
 
 .right .container {
-    padding-top: 30px;
+    padding-top: 60px;
 }
 
 h3 {
     color: rgb(99, 220, 62);
     font-weight: 400;
     text-align: justify;
-    /* text-align-last: center; */
+    text-align-last: center;
     font-size: 1.2rem;
 }
  
@@ -47,7 +47,7 @@ h3 {
 
 .left {
     background-color: rgb(99, 220, 62);
-    width: 30%;
+    width: 40%;
     display: flex;
     flex-direction: column;
     /* justify-content: space-evenly; */
@@ -149,14 +149,19 @@ button a {
     font-weight: 400;
 }
 
-.video-descricao {
-
-    color: rgb(115, 26, 183);
-    padding: 20px;
+ul {
+    padding-inline-start: 17px;
 }
 
+.themes li {
+    color: rgb(99, 220, 62);
+    font-size: 1.3rem;
+}
+
+ 
+
 .convidados {
-    margin-top: 30px;
+    margin-top: 60px;
     display: flex;
     text-align: center;
     justify-content: space-evenly;
@@ -165,8 +170,8 @@ button a {
 }
 
 .convidados img {
-    width: 180px;
-    height: 180px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     border: 5px solid rgb(99, 220, 62);
     margin-right: 10px;
@@ -354,13 +359,11 @@ button a {
 
     .convidados {
         display: block;
-        margin-bottom: 45px;
     }
 
     .convidados figure {
         display: flex;
         flex-direction: row;
-        justify-content: center;
     }
 
     .convidados img {
@@ -387,10 +390,6 @@ button a {
     }
 
     #btnPergunta, #btnLiveDireito {
-        width: 100%;
-    }
-
-    iframe {
         width: 100%;
     }
 }
